@@ -1,7 +1,7 @@
 theme_OPG_basic <- function(){
   font <- "Georgia"   #assign font family up front
 
-  theme_minimal() %+replace%    #replace elements we want to change
+  theme_minimal() +   #replace elements we want to change
 
     theme(
 
