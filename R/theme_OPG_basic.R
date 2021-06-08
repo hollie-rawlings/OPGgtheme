@@ -1,9 +1,9 @@
 theme_OPG_basic <- function(){
   font <- "Georgia"   #assign font family up front
 
-  theme_minimal() +   #replace elements we want to change
+  ggplot2:theme_minimal() +   #replace elements we want to change
 
-    theme(
+    ggplot2:theme(
 
       #grid elements
       panel.grid.major = element_blank(),    #strip major gridlines
