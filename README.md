@@ -7,7 +7,7 @@
 
 <!-- badges: end -->
 
-The goal of OPGgtheme is to provide a
+The goal of OPGgtheme is to provide a brand safe template for gg plot visualisations
 
 ## Installation
 
