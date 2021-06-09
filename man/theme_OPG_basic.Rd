@@ -2,10 +2,25 @@
 % Please edit documentation in R/theme_OPG_basic.R
 \name{theme_OPG_basic}
 \alias{theme_OPG_basic}
-\title{A basic universal company theme}
+\title{theme_OPG_basic}
 \usage{
 theme_OPG_basic()
 }
+\value{
+a ggplot 2 theme object within OPG branding complicance
+}
 \description{
-Imports a ggplot 2 thgeme object to help you theme plot within company guidelines
+theme_OPG_basic
+}
+\examples{
+ library(ggplot2)
+ data=head(mtcars, 30)
+ g <-ggplot2::ggplot(data, aes(x=wt, y=mpg)) +
+ ggplot2::geom_point() + # Show dots
+ ggplot2::geom_text(
+   label=rownames(data),
+   nudge_x = 0.25, nudge_y = 0.25,
+   check_overlap = TRUE
+  )
+  g <- g + OPGgtheme::theme_OPG_basic()
 }

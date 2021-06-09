@@ -1,12 +1,19 @@
-#' A basic universal company theme
+#' theme_OPG_basic
 #'
-#'Imports a ggplot 2 thgeme object to help you theme plot within company guidelines
+#' @return a ggplot 2 theme object within OPG branding complicance
+#' @export
 #'
-#'
-#'
-#'
-#'
-#'
+#' @examples
+#'  library(ggplot2)
+#'  data=head(mtcars, 30)
+#'  g <-ggplot2::ggplot(data, aes(x=wt, y=mpg)) +
+#'  ggplot2::geom_point() + # Show dots
+#'  ggplot2::geom_text(
+#'    label=rownames(data),
+#'    nudge_x = 0.25, nudge_y = 0.25,
+#'    check_overlap = TRUE
+#'   )
+#'   g <- g + OPGgtheme::theme_OPG_basic()
 theme_OPG_basic <- function(){
   font <- "Georgia"   #assign font family up front
 

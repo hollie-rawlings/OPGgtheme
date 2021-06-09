@@ -11,8 +11,14 @@ check()
 use_package("ggplot2")
 #use_mit_license("Hollie Rawlings")
 document()
-install()
+
 
 library(OPGgtheme)
+check()
+test_check("OPGgtheme")
+install()
 
-use_testthat()
+#use_readme_rmd()
+build_readme()
+check()
+install()
