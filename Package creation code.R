@@ -9,5 +9,10 @@ load_all()
 OPGgtheme::theme_OPG_basic()
 check()
 use_package("ggplot2")
-use_mit_license("Hollie Rawlings")
+#use_mit_license("Hollie Rawlings")
 document()
+install()
+
+library(OPGgtheme)
+
+use_testthat()
