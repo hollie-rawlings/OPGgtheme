@@ -15,7 +15,7 @@
 #'   )
 #'   g <- g + OPGgtheme::theme_OPG_basic()
 theme_OPG_basic <- function(){
-  font <- "Georgia"   #assign font family up front
+  font <- "Arial"   #assign font family up front
 
   ggplot2::theme_minimal() +   #replace elements we want to change
 
@@ -34,7 +34,7 @@ theme_OPG_basic <- function(){
         family = font,            #set font family
         size = 20,                #set font size
         face = 'bold',            #bold typeface
-        hjust = 0,                #left align
+        hjust = 0.5,              #center align
         vjust = 2),               #raise slightly
 
       plot.subtitle = ggplot2::element_text(          #subtitle
