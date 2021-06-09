@@ -15,7 +15,7 @@
 #'   )
 #'   g <- g + OPGgtheme::theme_OPG_basic()
 theme_OPG_basic <- function(){
-  font <- "Arial"   #assign font family up front
+  font <- "sans"   #assign font family up front
 
   ggplot2::theme_minimal() +   #replace elements we want to change
 
