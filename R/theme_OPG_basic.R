@@ -30,6 +30,7 @@ theme_OPG_basic <- function(){
       plot.title = ggplot2::element_text(             #title
         family = font,            #set font family
         size = 20,                #set font size
+        color = 'red',
         face = 'bold',            #bold typeface
         hjust = 0.5,              #center align
         vjust = 2),               #raise slightly
