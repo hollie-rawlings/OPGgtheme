@@ -15,7 +15,7 @@
 #'   )
 #'   g <- g + OPGgtheme::theme_OPG_basic()
 theme_OPG_basic <- function(){
-  font <- "sans"   #assign font family up front
+  font <- "serif"   #assign font family up front
 
   ggplot2::theme_minimal() +   #replace elements we want to change
 
@@ -25,9 +25,6 @@ theme_OPG_basic <- function(){
       panel.grid.major = ggplot2::element_blank(),    #strip major gridlines
       panel.grid.minor = ggplot2::element_blank(),    #strip minor gridlines
       axis.ticks = ggplot2::element_blank(),          #strip axis ticks
-
-      #since theme_minimal() already strips axis lines,
-      #we don't need to do that again
 
       #text elements
       plot.title = ggplot2::element_text(             #title
